@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/bg_soft_mark_comment9"
+        android:layout_margin="10dp"
+        android:layout_height="40dp">
+
+        <Button
+            android:id="@+id/bt_manhua_sousuo_go"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ffffff"/>
+        <TextView
+            android:id="@+id/sousuo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_search_top_normal"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/sousuo_text"
+            android:layout_alignTop="@id/sousuo_text"
+            android:layout_alignBottom="@id/sousuo_text"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/icon_hotsearch_tag"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="热门搜索"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_sousuo_load"
+        android:layout_width="100dp"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#00ffffff"
+        android:visibility="gone"
+        android:src="@mipmap/icon_content_refresh_change"/>
+
+    <GridView
+        android:id="@+id/gv_manhua_sousuo_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:layout_margin="10dp"
+        android:numColumns="4">
+
+    </GridView>
+
+</LinearLayout>

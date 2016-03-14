@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_manhua_gengxin_itempic"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="98dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="3.5"
+        android:layout_height="98dp"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asasa"
+            android:textColor="#000000"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/iv_manhua_gengxin_authorpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_list_author_gray"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+            android:paddingTop="2dp"
+            android:layout_below="@id/tv_manhua_gengxin_name"
+            android:layout_alignLeft="@id/tv_manhua_gengxin_name"/>
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:text="ddddd"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:layout_below="@+id/tv_manhua_gengxin_name"
+            android:layout_toRightOf="@+id/iv_manhua_gengxin_authorpic" />
+
+        <ImageView
+            android:id="@+id/iv_manhua_gengxin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_list_hand_gray"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignTop="@+id/tv_manhua_gengxin_author"
+            android:layout_toRightOf="@+id/tv_manhua_gengxin_author" />
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ddddd"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:textColor="#a5a5a5"
+            android:layout_alignTop="@+id/iv_manhua_gengxin_num"
+            android:layout_toRightOf="@+id/iv_manhua_gengxin_num" />
+        <ImageView
+            android:id="@+id/iv_manhua_gengxin_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+            android:src="@mipmap/icon_list_classify_gray"
+            android:layout_alignTop="@+id/tv_manhua_gengxin_num"
+            android:layout_toRightOf="@+id/tv_manhua_gengxin_num"/>
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="ddddd"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="#a5a5a5"
+            android:layout_alignTop="@+id/iv_manhua_gengxin_type"
+            android:layout_toRightOf="@+id/iv_manhua_gengxin_type" />
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更新到"
+            android:layout_marginBottom="5dp"
+            android:textColor="#a5a5a5"
+            android:textSize="12sp"
+            android:layout_below="@+id/tv_manhua_gengxin_author" />
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ddddd"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/tv_manhua_gengxin_txt1"
+            android:layout_toRightOf="@+id/tv_manhua_gengxin_txt1"/>
+
+        <ImageView
+            android:id="@+id/iv_manhua_gengxin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/icon_list_clock"
+            android:layout_below="@+id/tv_manhua_gengxin_txt1" />
+
+        <TextView
+            android:id="@+id/tv_manhua_gengxin_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ddddd"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            android:textColor="#a90303"
+            android:layout_below="@+id/tv_manhua_gengxin_txt1"
+            android:layout_toRightOf="@+id/iv_manhua_gengxin_time" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

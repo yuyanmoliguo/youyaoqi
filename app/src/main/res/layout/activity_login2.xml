@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/launch_pager_meteor_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/launch_pager_meteor_u17girl"/>
+
+    <ImageView
+        android:id="@+id/iv_login_x1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:background="@mipmap/launch_pager_meteor_background_meteor"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/iv_login_x3"
+        android:layout_toStartOf="@+id/iv_login_x3"
+        android:layout_marginTop="41dp" />
+
+    <ImageView
+        android:id="@+id/iv_login_x2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:background="@mipmap/launch_pager_meteor_background_meteor"
+        android:layout_alignTop="@+id/iv_login_x1"
+        android:layout_toLeftOf="@+id/iv_login_x1"
+        android:layout_toStartOf="@+id/iv_login_x1" />
+    <ImageView
+        android:id="@+id/iv_login_x3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:background="@mipmap/launch_pager_meteor_background_meteor"
+        android:layout_alignTop="@+id/iv_login_x1"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

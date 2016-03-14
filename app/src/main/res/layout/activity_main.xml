@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.2">
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_weight="0"
+        android:background="#a5a5a5"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/bg_tab_bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_manhua"
+            android:text="漫画"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/rb_main_back"
+            android:drawableTop="@drawable/rb_main_manhua"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/rb_main_text"/>
+
+        <ImageView
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="#a5a5a5"/>
+
+        <RadioButton
+            android:id="@+id/rb_main_shoucang"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/rb_main_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_main_shoucang"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/rb_main_text"/>
+
+        <ImageView
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="#a5a5a5"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_main_faxian"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/rb_main_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_main_faxian"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@color/rb_main_text"/>
+
+        <ImageView
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:background="#a5a5a5"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_main_wode"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/rb_main_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_main_wode"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/rb_main_text"/>
+
+    </RadioGroup>
+
+</LinearLayout>

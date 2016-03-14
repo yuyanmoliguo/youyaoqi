@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_gengxin_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.2">
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_weight="0"
+        android:background="#a5a5a5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/bg_tab_bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_gengxin_item_bottom_yuepiao"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/bt_back_gengxin_item_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_comic_ticket"
+            android:gravity="center"
+            android:text="月票"
+            android:textColor="@color/rb_main_text"/>
+
+        <ImageView
+            android:layout_width="0.2dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:background="#a5a5a5"/>
+
+
+        <Button
+            android:id="@+id/bt_gengxin_item_bottom_pinglun"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/bt_back_gengxin_item_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_comic_comment"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/rb_main_text"/>
+
+        <ImageView
+            android:layout_width="0.2dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:background="#a5a5a5"/>
+
+
+        <Button
+            android:id="@+id/bt_gengxin_item_bottom_fenxiang"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="12sp"
+            android:background="@drawable/bt_back_gengxin_item_bottom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_comic_share"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/rb_main_text"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

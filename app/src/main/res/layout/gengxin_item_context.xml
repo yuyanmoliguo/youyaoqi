@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/gengxin_item_pic"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/gengxin_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/gengxin_item_pic"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="qk"/>
+        <TextView
+            android:id="@+id/gengxin_item_aut0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gengxin_item_name"
+            android:layout_alignLeft="@id/gengxin_item_name"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:text="作者"/>
+        <TextView
+            android:id="@+id/gengxin_item_aut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/gengxin_item_aut0"
+            android:layout_alignTop="@id/gengxin_item_aut0"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="ddd"/>
+
+        <TextView
+            android:id="@+id/gengxin_item_time0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gengxin_item_aut0"
+            android:layout_alignLeft="@id/gengxin_item_name"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:text="更新"/>
+        <TextView
+            android:id="@+id/gengxin_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/gengxin_item_time0"
+            android:layout_alignTop="@id/gengxin_item_time0"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:text="121312"/>
+
+        <TextView
+            android:id="@+id/gengxin_item_num0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gengxin_item_time0"
+            android:layout_alignLeft="@id/gengxin_item_name"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:text="总点击"/>
+        <TextView
+            android:id="@+id/gengxin_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/gengxin_item_num0"
+            android:layout_alignTop="@id/gengxin_item_num0"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:text="121万"/>
+
+        <Button
+            android:id="@+id/bt_gengxin_item_add"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="#ff6678"
+            android:textColor="#ffffff"
+            android:text="添加收藏"
+            android:layout_margin="5dp"
+            android:layout_below="@id/gengxin_item_num0"
+            android:layout_alignLeft="@id/gengxin_item_num0"/>
+
+        <Button
+            android:id="@+id/bt_gengxin_item_jixu"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="#0fc4d9"
+            android:textColor="#ffffff"
+            android:text="继续阅读"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/bt_gengxin_item_add"
+            android:layout_below="@id/gengxin_item_num0"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gengxin_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_context_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:text="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"/>
+
+        <ImageView
+            android:id="@+id/iv_gengxin_item_context_no"
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:background="@mipmap/icon_comic_detail_disvisible"
+            android:layout_alignBottom="@id/tv_gengxin_item_context_no"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_context_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:text="sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss"/>
+
+        <TextView
+            android:id="@+id/fl0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="分类："
+            android:layout_below="@id/tv_gengxin_item_context_yes"
+            android:layout_alignLeft="@id/tv_gengxin_item_context_yes"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextfenlei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/fl0"
+            android:layout_alignTop="@id/fl0"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/lx0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="类型："
+            android:layout_below="@id/fl0"
+            android:layout_alignLeft="@id/tv_gengxin_item_context_yes"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextleixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/lx0"
+            android:layout_alignTop="@id/lx0"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/zyp0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="总月票："
+            android:layout_below="@id/lx0"
+            android:layout_alignLeft="@id/tv_gengxin_item_context_yes"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextzongyuepiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/zyp0"
+            android:layout_alignTop="@id/zyp0"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/ztc0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="总吐槽："
+            android:layout_below="@id/lx0"
+            android:layout_toRightOf="@id/tv_gengxin_item_contextzongyuepiao"
+            android:layout_marginLeft="70dp"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextzongtucao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/ztc0"
+            android:layout_alignTop="@id/ztc0"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/zdj0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="总点击："
+            android:layout_below="@id/zyp0"
+            android:layout_alignLeft="@id/tv_gengxin_item_context_yes"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextzongdianji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/zdj0"
+            android:layout_alignTop="@id/zdj0"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/zpl0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="总评论："
+            android:layout_below="@id/ztc0"
+            android:layout_toRightOf="@id/tv_gengxin_item_contextzongdianji"
+            android:layout_alignLeft="@id/ztc0"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextzongpinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/zpl0"
+            android:layout_alignTop="@id/zpl0"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/ztp0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="总图片："
+            android:layout_below="@id/zdj0"
+            android:layout_alignLeft="@id/tv_gengxin_item_context_yes"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextzongtupian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/ztp0"
+            android:layout_alignTop="@id/ztp0"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/byyp0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="本月月票："
+            android:layout_below="@id/zpl0"
+            android:layout_toRightOf="@id/tv_gengxin_item_contextzongdianji"
+            android:layout_alignLeft="@id/ztc0"/>
+
+        <TextView
+            android:id="@+id/tv_gengxin_item_contextbenyueyuepiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#a5a5a5"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="sss"
+            android:layout_toRightOf="@id/byyp0"
+            android:layout_alignTop="@id/byyp0"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/iv_gengxin_item_context_yes"
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:background="@mipmap/icon_comic_detail_visible"
+            android:layout_alignBottom="@id/byyp0"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_tab_bottom">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:text="目录"/>
+
+        <ImageButton
+            android:id="@+id/ib_gengxin_item_sx"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:background="@mipmap/icon_comic_rank"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

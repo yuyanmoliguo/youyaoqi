@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_leixing_item_item_pic"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="12">
+
+        <TextView
+            android:id="@+id/tv_leixing_item_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"
+            android:text="mamamama"/>
+
+        <ImageView
+            android:id="@+id/leixing_item_item_aut0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_list_author_gray"
+            android:paddingTop="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_leixing_item_item_name"
+            android:layout_alignLeft="@id/tv_leixing_item_item_name"/>
+
+        <TextView
+            android:id="@+id/leixing_item_item_aut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:text="aasasas"
+            android:layout_toRightOf="@id/leixing_item_item_aut0"
+            android:layout_alignTop="@id/leixing_item_item_aut0"/>
+
+        <ImageView
+            android:id="@+id/leixing_item_item_num0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/icon_list_hand_gray"
+            android:layout_toRightOf="@id/leixing_item_item_aut"
+            android:layout_alignTop="@id/leixing_item_item_aut"/>
+
+        <TextView
+            android:id="@+id/leixing_item_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:layout_marginLeft="5dp"
+            android:text="aasasas"
+            android:layout_toRightOf="@id/leixing_item_item_num0"
+            android:layout_alignTop="@id/leixing_item_item_num0"/>
+
+        <ImageView
+            android:id="@+id/leixing_item_item_type0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="1dp"
+            android:src="@mipmap/icon_list_classify_gray"
+            android:layout_toRightOf="@id/leixing_item_item_num"
+            android:layout_alignTop="@id/leixing_item_item_num"/>
+
+        <TextView
+            android:id="@+id/leixing_item_item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#a5a5a5"
+            android:text="aasasas"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/leixing_item_item_type0"
+            android:layout_alignTop="@id/leixing_item_item_type0"/>
+
+        <TextView
+            android:id="@+id/leixing_item_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#a5a5a5"
+            android:text="aasasas"
+            android:layout_below="@id/leixing_item_item_aut0"
+            android:layout_alignLeft="@id/leixing_item_item_aut0"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
